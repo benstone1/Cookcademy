@@ -28,7 +28,7 @@ protocol ModifyComponentView: View {
 }
 
 struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyComponentView>: View where Component == DestinationView.Component {
-    @Binding var ingredients: [Ingredient]
+    @Binding var components: [Ingredient]
     
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
@@ -38,10 +38,10 @@ struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyC
     var body: some View {
         VStack {
             let addIngredientView = ModifyIngredientView(component: $newIngredient) { ingredient in
-                ingredients.append(ingredient)
+                components.append(ingredient)
                 newIngredient = Ingredient()
             }.navigationTitle("Add Ingredient")
-            if ingredients.isEmpty {
+            if components.isEmpty {
                 Spacer()
                 NavigationLink("Add the first ingredient", destination: addIngredientView)
                 Spacer()
@@ -53,8 +53,8 @@ struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyC
                     Spacer()
                 }
                 List {
-                    ForEach(ingredients.indices, id: \.self) { index in
-                        let ingredient = ingredients[index]
+                    ForEach(components.indices, id: \.self) { index in
+                        let ingredient = components[index]
                         Text(ingredient.description)
                     }
                     .listRowBackground(listBackgroundColor)
@@ -73,10 +73,10 @@ struct ModifyIngredientsView_Previews: PreviewProvider {
     @State static var emptyIngredients = [Ingredient]()
     static var previews: some View {
         NavigationView {
-            ModifyComponentsView<Ingredient, ModifyIngredientView>(ingredients: $recipe.ingredients)
+            ModifyComponentsView<Ingredient, ModifyIngredientView>(components: $recipe.ingredients)
         }
         NavigationView {
-            ModifyComponentsView<Ingredient, ModifyIngredientView>(ingredients: $emptyIngredients)
+            ModifyComponentsView<Ingredient, ModifyIngredientView>(components: $emptyIngredients)
         }
     }
 }

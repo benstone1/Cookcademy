@@ -23,7 +23,7 @@ struct ModifyDirectionView: ModifyComponentView {
     
     var body: some View {
         Form {
-            TextField("Direction description", text: $direction.description)
+            TextField("Direction Description", text: $direction.description)
                 .listRowBackground(listBackgroundColor)
             Toggle("Optional", isOn: $direction.isOptional)
                 .listRowBackground(listBackgroundColor)

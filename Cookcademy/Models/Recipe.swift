@@ -37,9 +37,18 @@ struct MainInformation {
     }
 }
 
-struct Direction {
+struct Direction: RecipeComponent {
     var description: String
     var isOptional: Bool
+    
+    init(description: String, isOptional: Bool) {
+        self.description = description
+        self.isOptional = isOptional
+    }
+    
+    init() {
+        self.init(description: "", isOptional: false)
+    }
 }
 
 struct Ingredient: RecipeComponent {

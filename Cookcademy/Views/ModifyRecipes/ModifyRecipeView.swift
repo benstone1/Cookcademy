@@ -16,10 +16,9 @@ struct ModifyRecipeView: View {
                 .padding()
             Button("Fill in the recipe with test data.") {
                 // TODO: Add implementation for creating a recipe
-                recipe.mainInformation = Recipe.testRecipes[0].mainInformation
-                recipe.mainInformation.name += " Copy"
-                recipe.directions = Recipe.testRecipes[0].directions
-                recipe.ingredients = Recipe.testRecipes[0].ingredients
+                recipe.mainInformation = MainInformation(name: "test", description: "test", author: "test", category: .breakfast)
+                recipe.directions = [Direction(description: "test", isOptional: false)]
+                recipe.ingredients = [Ingredient(name: "test", quantity: 1.0, unit: .none)]
             }
             Spacer()
         }

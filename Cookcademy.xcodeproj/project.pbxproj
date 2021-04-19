@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F208ABE4262E4533003E59A8 /* ModifyDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208ABE3262E4533003E59A8 /* ModifyDirectionView.swift */; };
 		F278C9C8262E011800FE12B7 /* CookcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9C7262E011800FE12B7 /* CookcademyApp.swift */; };
 		F278C9CA262E011800FE12B7 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9C9262E011800FE12B7 /* RecipesListView.swift */; };
 		F278C9CC262E011800FE12B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278C9CB262E011800FE12B7 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F208ABE3262E4533003E59A8 /* ModifyDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyDirectionView.swift; sourceTree = "<group>"; };
 		F278C9C4262E011800FE12B7 /* Cookcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278C9C7262E011800FE12B7 /* CookcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookcademyApp.swift; sourceTree = "<group>"; };
 		F278C9C9262E011800FE12B7 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				F2804118262E204100724108 /* ModifyRecipeView.swift */,
 				F280412E262E357000724108 /* ModifyComponentsView.swift */,
+				F208ABE3262E4533003E59A8 /* ModifyDirectionView.swift */,
 				F2804134262E3AD200724108 /* ModifyIngredientView.swift */,
 				F280412A262E311C00724108 /* ModifyMainInformationView.swift */,
 			);
@@ -209,6 +212,7 @@
 				F280412F262E357000724108 /* ModifyComponentsView.swift in Sources */,
 				F280410E262E0B2700724108 /* RecipeDetailView.swift in Sources */,
 				F280410B262E0ADE00724108 /* AppColor.swift in Sources */,
+				F208ABE4262E4533003E59A8 /* ModifyDirectionView.swift in Sources */,
 				F2804119262E204100724108 /* ModifyRecipeView.swift in Sources */,
 				F28040FF262E092E00724108 /* RecipeData.swift in Sources */,
 				F2804135262E3AD200724108 /* ModifyIngredientView.swift in Sources */,

@@ -11,15 +11,14 @@ struct ModifyIngredientView: ModifyComponentView {
     @Binding var ingredient: Ingredient
     let createAction: ((Ingredient) -> Void)
     
-    private let listBackgroundColor = AppColor.background
-    private let listTextColor = AppColor.foreground
-
     init(component: Binding<Ingredient>, createAction: @escaping (Ingredient) -> Void) {
         self._ingredient = component
         self.createAction = createAction
     }
+
+    private let listBackgroundColor = AppColor.background
+    private let listTextColor = AppColor.foreground
     
-    @EnvironmentObject private var recipeData: RecipeData
     @Environment(\.presentationMode) private var mode
 
     var body: some View {

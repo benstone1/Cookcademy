@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct RecipeCateogryGrid: View {
+struct RecipeCateogryGridView: View {
+    @StateObject var recipeData = RecipeData()
+
     var body: some View {
         let columns = [GridItem(), GridItem()]
         NavigationView {
@@ -15,7 +17,7 @@ struct RecipeCateogryGrid: View {
                 LazyVGrid(columns: columns, content: {
                     ForEach(MainInformation.Category.allCases, id: \.self) { category in
                         NavigationLink(
-                            destination: RecipesListView(),
+                            destination: RecipesListView().environmentObject(recipeData),
                             label: {
                                 CategoryView(category: category)
                             })
@@ -44,7 +46,7 @@ struct CategoryView: View {
 
 struct RecipeCateogryGrid_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCateogryGrid().preferredColorScheme(.dark)
-        RecipeCateogryGrid().preferredColorScheme(.light)
+        RecipeCateogryGridView().preferredColorScheme(.dark)
+        RecipeCateogryGridView().preferredColorScheme(.light)
     }
 }

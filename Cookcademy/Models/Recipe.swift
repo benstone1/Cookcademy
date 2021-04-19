@@ -42,7 +42,7 @@ struct Direction {
     var isOptional: Bool
 }
 
-struct Ingredient {
+struct Ingredient: RecipeComponent {
     var name: String
     var quantity: Double
     var unit: Unit

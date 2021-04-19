@@ -19,6 +19,7 @@
 		F2804122262E23E300724108 /* RecipeCategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2804121262E23E300724108 /* RecipeCategoryGridView.swift */; };
 		F280412B262E311C00724108 /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280412A262E311C00724108 /* ModifyMainInformationView.swift */; };
 		F280412F262E357000724108 /* ModifyIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280412E262E357000724108 /* ModifyIngredientsView.swift */; };
+		F2804135262E3AD200724108 /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2804134262E3AD200724108 /* ModifyIngredientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		F2804121262E23E300724108 /* RecipeCategoryGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCategoryGridView.swift; sourceTree = "<group>"; };
 		F280412A262E311C00724108 /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
 		F280412E262E357000724108 /* ModifyIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientsView.swift; sourceTree = "<group>"; };
+		F2804134262E3AD200724108 /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				F2804118262E204100724108 /* ModifyRecipeView.swift */,
 				F280412E262E357000724108 /* ModifyIngredientsView.swift */,
+				F2804134262E3AD200724108 /* ModifyIngredientView.swift */,
 				F280412A262E311C00724108 /* ModifyMainInformationView.swift */,
 			);
 			path = ModifyRecipes;
@@ -208,6 +211,7 @@
 				F280410B262E0ADE00724108 /* AppColor.swift in Sources */,
 				F2804119262E204100724108 /* ModifyRecipeView.swift in Sources */,
 				F28040FF262E092E00724108 /* RecipeData.swift in Sources */,
+				F2804135262E3AD200724108 /* ModifyIngredientView.swift in Sources */,
 				F278C9CA262E011800FE12B7 /* RecipesListView.swift in Sources */,
 				F2804122262E23E300724108 /* RecipeCategoryGridView.swift in Sources */,
 				F280412B262E311C00724108 /* ModifyMainInformationView.swift in Sources */,

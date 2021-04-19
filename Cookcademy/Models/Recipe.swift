@@ -93,7 +93,10 @@ extension Recipe {
                                     ingredients: [],
                                     directions: [])
     static let testRecipes: [Recipe] = [
-        Recipe(mainInformation: MainInformation(name: "R0", description: "A description", author: "me", category: .breakfast), ingredients: [], directions: []),
+        Recipe(mainInformation: MainInformation(name: "R0", description: "A description", author: "me", category: .breakfast), ingredients: [Ingredient(name: "I1", quantity: 1.0, unit: .none)], directions: [
+            Direction(description: "D1", isOptional: false),
+            Direction(description: "D2", isOptional: false)
+           ]),
         Recipe(mainInformation: MainInformation(name: "R1", description: "A description", author: "me", category: .breakfast),
                ingredients: [Ingredient(name: "I1", quantity: 1.0, unit: .none)],
                directions: [

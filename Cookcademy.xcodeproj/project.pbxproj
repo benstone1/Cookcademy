@@ -14,6 +14,7 @@
 		F278C9DB262E01F300FE12B7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9DA262E01F300FE12B7 /* Recipe.swift */; };
 		F28040FF262E092E00724108 /* RecipeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28040FE262E092E00724108 /* RecipeData.swift */; };
 		F280410B262E0ADE00724108 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280410A262E0ADE00724108 /* AppColor.swift */; };
+		F280410E262E0B2700724108 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280410D262E0B2700724108 /* RecipeDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F278C9DA262E01F300FE12B7 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F28040FE262E092E00724108 /* RecipeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeData.swift; sourceTree = "<group>"; };
 		F280410A262E0ADE00724108 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		F280410D262E0B2700724108 /* RecipeDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				F278C9C9262E011800FE12B7 /* RecipesListView.swift */,
+				F280410D262E0B2700724108 /* RecipeDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F278C9DB262E01F300FE12B7 /* Recipe.swift in Sources */,
+				F280410E262E0B2700724108 /* RecipeDetailView.swift in Sources */,
 				F280410B262E0ADE00724108 /* AppColor.swift in Sources */,
 				F28040FF262E092E00724108 /* RecipeData.swift in Sources */,
 				F278C9CA262E011800FE12B7 /* RecipesListView.swift in Sources */,

@@ -10,8 +10,8 @@ import SwiftUI
 struct RecipeDetailView: View {
     let recipe: Recipe
 
-    let listBackgroundColor = AppColor.background
-    let listTextColor = AppColor.foreground
+    private let listBackgroundColor = AppColor.background
+    private let listTextColor = AppColor.foreground
 
     var body: some View {
         VStack {

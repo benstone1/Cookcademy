@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct RecipesListView: View {
-    @EnvironmentObject var recipeData: RecipeData
+    @EnvironmentObject private var recipeData: RecipeData
     
-    let listBackgroundColor = AppColor.background
-    let listTextColor = AppColor.foreground
+    @State private var isPresenting = false
+    @State private var newRecipe = Recipe.emptyRecipe
+
+    private let listBackgroundColor = AppColor.background
+    private let listTextColor = AppColor.foreground
     
     var body: some View {
         List {
@@ -22,6 +25,35 @@ struct RecipesListView: View {
             .foregroundColor(listTextColor)
         }
         .navigationTitle(navigationTitle)
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    isPresenting = true
+                }, label: {
+                    Image(systemName: "plus")
+                })
+            }
+        })
+        .sheet(isPresented: $isPresenting, content: {
+            NavigationView {
+                Text("Create a new recipe")
+                    .toolbar(content: {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Dismiss") {
+                                isPresenting = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            if newRecipe.isValid {
+                                Button("Add") {
+                                    // TODO: Add recipe
+                                    isPresenting = false
+                                }
+                            }
+                        }
+                    })
+            }
+        })
     }
 }
 

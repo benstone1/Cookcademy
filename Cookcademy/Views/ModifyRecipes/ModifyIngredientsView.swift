@@ -7,6 +7,26 @@
 
 import SwiftUI
 
+protocol RecipeComponent: CustomStringConvertible {
+    init()
+    static func singularName() -> String
+    static func pluralName() -> String
+}
+
+extension RecipeComponent {
+    static func singularName() -> String {
+        String(describing: self).lowercased()
+    }
+    static func pluralName() -> String {
+        String(describing: self).lowercased() + "s"
+    }
+}
+
+protocol ModifyComponentView: View {
+    associatedtype Component
+    init(component: Binding<Component>, createAction: (Component) -> Void)
+}
+
 struct ModifyRecipeIngredientsView: View {
     @Binding var ingredients: [Ingredient]
     

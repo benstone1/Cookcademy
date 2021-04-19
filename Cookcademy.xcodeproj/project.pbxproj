@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F278C9C8262E011800FE12B7 /* CookcademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9C7262E011800FE12B7 /* CookcademyApp.swift */; };
-		F278C9CA262E011800FE12B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9C9262E011800FE12B7 /* ContentView.swift */; };
+		F278C9CA262E011800FE12B7 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9C9262E011800FE12B7 /* RecipesListView.swift */; };
 		F278C9CC262E011800FE12B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278C9CB262E011800FE12B7 /* Assets.xcassets */; };
 		F278C9CF262E011800FE12B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F278C9CE262E011800FE12B7 /* Preview Assets.xcassets */; };
 		F278C9DB262E01F300FE12B7 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278C9DA262E01F300FE12B7 /* Recipe.swift */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		F278C9C4262E011800FE12B7 /* Cookcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cookcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F278C9C7262E011800FE12B7 /* CookcademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookcademyApp.swift; sourceTree = "<group>"; };
-		F278C9C9262E011800FE12B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F278C9C9262E011800FE12B7 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
 		F278C9CB262E011800FE12B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F278C9CE262E011800FE12B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F278C9D0262E011800FE12B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				F278C9C7262E011800FE12B7 /* CookcademyApp.swift */,
-				F278C9C9262E011800FE12B7 /* ContentView.swift */,
+				F278C9C9262E011800FE12B7 /* RecipesListView.swift */,
 				F278C9DA262E01F300FE12B7 /* Recipe.swift */,
 				F278C9CB262E011800FE12B7 /* Assets.xcassets */,
 				F278C9D0262E011800FE12B7 /* Info.plist */,
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F278C9DB262E01F300FE12B7 /* Recipe.swift in Sources */,
-				F278C9CA262E011800FE12B7 /* ContentView.swift in Sources */,
+				F278C9CA262E011800FE12B7 /* RecipesListView.swift in Sources */,
 				F278C9C8262E011800FE12B7 /* CookcademyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

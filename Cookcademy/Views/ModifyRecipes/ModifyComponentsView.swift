@@ -1,5 +1,5 @@
 //
-//  ModifyIngredientsView.swift
+//  ModifyComponentsView.swift
 //  Cookcademy
 //
 //  Created by Ben Stone on 4/19/21.
@@ -27,39 +27,39 @@ protocol ModifyComponentView: View {
     init(component: Binding<Component>, createAction: @escaping (Component) -> Void)
 }
 
-struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyComponentView>: View where Component == DestinationView.Component {
-    @Binding var components: [Ingredient]
+struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyComponentView>: View where DestinationView.Component == Component {
+    @Binding var components: [Component]
     
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
 
-    @State private var newIngredient = Ingredient()
+    @State private var newComponent = Component()
     
     var body: some View {
         VStack {
-            let addIngredientView = ModifyIngredientView(component: $newIngredient) { ingredient in
-                components.append(ingredient)
-                newIngredient = Ingredient()
-            }.navigationTitle("Add Ingredient")
+            let addComponentView = DestinationView(component: $newComponent) { component in
+                components.append(component)
+                newComponent = Component()
+            }.navigationTitle("Add \(Component.singularName().capitalized)")
             if components.isEmpty {
                 Spacer()
-                NavigationLink("Add the first ingredient", destination: addIngredientView)
+                NavigationLink("Add the first \(Component.singularName())", destination: addComponentView)
                 Spacer()
             } else {
                 HStack {
-                    Text("Ingredients")
+                    Text(Component.pluralName().capitalized)
                         .font(.title)
                         .padding()
                     Spacer()
                 }
                 List {
                     ForEach(components.indices, id: \.self) { index in
-                        let ingredient = components[index]
-                        Text(ingredient.description)
+                        let component = components[index]
+                        Text(component.description)
                     }
                     .listRowBackground(listBackgroundColor)
-                    NavigationLink("Add another Ingredient",
-                                   destination: addIngredientView)
+                    NavigationLink("Add another \(Component.singularName())",
+                                   destination: addComponentView)
                         .buttonStyle(PlainButtonStyle())
                         .listRowBackground(listBackgroundColor)
                 }.foregroundColor(listTextColor)
@@ -68,7 +68,7 @@ struct ModifyComponentsView<Component: RecipeComponent, DestinationView: ModifyC
     }
 }
 
-struct ModifyIngredientsView_Previews: PreviewProvider {
+struct ModifyComponentsView_Previews: PreviewProvider {
     @State static var recipe = Recipe.testRecipes[1]
     @State static var emptyIngredients = [Ingredient]()
     static var previews: some View {

@@ -39,7 +39,7 @@ struct RecipesListView: View {
         })
         .sheet(isPresented: $isPresenting, content: {
             NavigationView {
-                Text("Create a new recipe")
+                ModifyRecipeView(recipe: $newRecipe)                
                     .toolbar(content: {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Dismiss") {
@@ -49,7 +49,7 @@ struct RecipesListView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             if newRecipe.isValid {
                                 Button("Add") {
-                                    // TODO: Add recipe
+                                    recipeData.recipes.append(newRecipe)
                                     isPresenting = false
                                 }
                             }

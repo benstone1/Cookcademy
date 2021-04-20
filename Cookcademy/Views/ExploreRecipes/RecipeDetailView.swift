@@ -14,6 +14,7 @@ struct RecipeDetailView: View {
     private let listTextColor = AppColor.foreground
 
     @State private var isPresenting = false
+    @EnvironmentObject private var recipeData: RecipeData
 
     var body: some View {
         VStack {
@@ -54,6 +55,11 @@ struct RecipeDetailView: View {
                 HStack {
                     Button("Edit") {
                         isPresenting = true
+                    }
+                    Button(action: {
+                        recipe.isFavorite.toggle()
+                    }) {
+                        Image(systemName: recipe.isFavorite ? "heart.fill" : "heart")
                     }
                 }
             }

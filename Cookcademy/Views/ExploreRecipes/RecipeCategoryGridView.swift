@@ -25,7 +25,7 @@ struct RecipeCateogryGridView: View {
                 })
             }
             .navigationTitle("Categories")
-        }.environmentObject(recipeData)
+        }
     }
 }
 

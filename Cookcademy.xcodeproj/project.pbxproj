@@ -21,6 +21,7 @@
 		F280412B262E311C00724108 /* ModifyMainInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280412A262E311C00724108 /* ModifyMainInformationView.swift */; };
 		F280412F262E357000724108 /* ModifyComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280412E262E357000724108 /* ModifyComponentsView.swift */; };
 		F2804135262E3AD200724108 /* ModifyIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2804134262E3AD200724108 /* ModifyIngredientView.swift */; };
+		F2A1E0D5262F5C7800A32B7F /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A1E0D4262F5C7800A32B7F /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		F280412A262E311C00724108 /* ModifyMainInformationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModifyMainInformationView.swift; sourceTree = "<group>"; };
 		F280412E262E357000724108 /* ModifyComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyComponentsView.swift; sourceTree = "<group>"; };
 		F2804134262E3AD200724108 /* ModifyIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyIngredientView.swift; sourceTree = "<group>"; };
+		F2A1E0D4262F5C7800A32B7F /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		F2804101262E098700724108 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F2A1E0D4262F5C7800A32B7F /* MainTabView.swift */,
 				F280411F262E23A000724108 /* ExploreRecipes */,
 				F280411D262E239500724108 /* ModifyRecipes */,
 			);
@@ -211,6 +214,7 @@
 				F278C9DB262E01F300FE12B7 /* Recipe.swift in Sources */,
 				F280412F262E357000724108 /* ModifyComponentsView.swift in Sources */,
 				F280410E262E0B2700724108 /* RecipeDetailView.swift in Sources */,
+				F2A1E0D5262F5C7800A32B7F /* MainTabView.swift in Sources */,
 				F280410B262E0ADE00724108 /* AppColor.swift in Sources */,
 				F208ABE4262E4533003E59A8 /* ModifyDirectionView.swift in Sources */,
 				F2804119262E204100724108 /* ModifyRecipeView.swift in Sources */,

@@ -96,7 +96,7 @@ extension Recipe {
                                                 category: .lunch),
                ingredients: [
                     Ingredient(name: "Large beets chopped into a large dice", quantity: 3, unit: .none),
-                    Ingredient(name: "Large apples chooped into a large dice", quantity: 2, unit: .none),
+                    Ingredient(name: "Large apples chopped into a large dice", quantity: 2, unit: .none),
                     Ingredient(name: "Zest of lemon", quantity: 1, unit: .none),
                     Ingredient(name: "Juice of lemon", quantity: 0.5, unit: .none),
                     Ingredient(name: "Olive Oil", quantity: 1, unit: .tsp),
@@ -138,7 +138,7 @@ extension Recipe {
                     Direction(description: "In an oval dutch oven, melt the fat over a medium to high heat.", isOptional: false),
                     Direction(description: "Sear the brisket on both side then remove the heat", isOptional: false),
                     Direction(description: "Add a bit more fat or vegetable oil and sear the vegetables until the onions become translucent", isOptional: false),
-                    Direction(description: "Add the wine mixture, return the beef to the pot, add the chucken stock until it come 1/2 way up the beef", isOptional: false),
+                    Direction(description: "Add the wine mixture, return the beef to the pot, add the chicken stock until it come 1/2 way up the beef", isOptional: false),
                     Direction(description: "Close the lid and bake at 250 until fork tender (4-6 hrs)", isOptional: false)
                 ]
         ),
@@ -154,7 +154,7 @@ extension Recipe {
                     Ingredient(name: "Milk", quantity: 2, unit: .tbs)
                ],
                directions:  [
-                    Direction(description: "Preheat pven to 350 degrees F", isOptional: false),
+                    Direction(description: "Preheat oven to 350 degrees F", isOptional: false),
                     Direction(description: "Crush graham cracker in large mixing bowl with clean hands, not in food processor! (Make sure pieces are chunky)", isOptional: false),
                     Direction(description: "Smei-melt the chocolate chips, keep some in tact", isOptional: false),
                     Direction(description: "Stir in rest of ingredients (vanilla, milk)", isOptional: false),
@@ -211,7 +211,7 @@ extension Recipe {
                     Ingredient(name: "Ground Black Pepper", quantity: 1, unit: .none),
                     Ingredient(name: "Shredded Cheddar", quantity: 1, unit: .none),
                     Ingredient(name: "Sour Cream", quantity: 1, unit: .none),
-                    Ingredient(name: "Cilanto", quantity: 1, unit: .none)
+                    Ingredient(name: "Cilantro", quantity: 1, unit: .none)
                ],
                directions:  [
                     Direction(description: "In a large pot over medium heat, heat olive oil then add onions, bell peppers and carrots", isOptional: false),
@@ -230,7 +230,7 @@ extension Recipe {
                                                 category: .dinner),
                ingredients: [
                     Ingredient(name: "Kosher Salt", quantity: 1, unit: .none),
-                    Ingredient(name: "Linguine", quantity: 12, unit: .oz),
+                    Ingredient(name: "Linguini", quantity: 12, unit: .oz),
                     Ingredient(name: "Large shrimp, peeled", quantity: 20, unit: .oz),
                     Ingredient(name: "Extra-virgin olive oil", quantity: 0.33, unit: .cups),
                     Ingredient(name: "Cloves garlic, minced", quantity: 5, unit: .none),
@@ -238,7 +238,7 @@ extension Recipe {
                     Ingredient(name: "White Wine", quantity: 0.33, unit: .cups),
                     Ingredient(name: "Lemons Squeezed + Wedges", quantity: 0.5, unit: .none),
                     Ingredient(name: "Unsalted butter, cut into pieces", quantity: 4, unit: .tbs),
-                    Ingredient(name: "Finaly Chopped Fresh Parsely", quantity: 0.25, unit: .cups)
+                    Ingredient(name: "Finely Chopped Fresh Parsley", quantity: 0.25, unit: .cups)
                ],
                directions:  [
                     Direction(description: "Bring large pot of salt water to a boil", isOptional: false),
@@ -250,19 +250,19 @@ extension Recipe {
                     Direction(description: "Add shrimp and cook, stirring occasionally, until pink and just cooked through: 1-2min per side", isOptional: false),
                     Direction(description: "Remove shrimp from plate", isOptional: false),
                     Direction(description: "Add the wine and lemon juice to skillet and simmer slightly reduced, 2 min", isOptional: false),
-                    Direction(description: "Return shrimp and any juices from place to skillet alongside linguine, butter, and a 0.5 cup of cooking water", isOptional: false),
+                    Direction(description: "Return shrimp and any juices from place to skillet alongside linguini, butter, and a 0.5 cup of cooking water", isOptional: false),
                     Direction(description: "Continue to cook, tossing, until the butter is melted and the shrimp is hot, about 2 min", isOptional: false),
                     Direction(description: "Add water as needed", isOptional: false),
-                    Direction(description: "Season wtih salt, stir in parsely", isOptional: false),
+                    Direction(description: "Season with salt, stir in parsley", isOptional: false),
                     Direction(description: "Serve with lemon wedges!", isOptional: true)
                 ]
         ),
-        Recipe(mainInformation: MainInformation(name: "Chocolate Billionairs",
+        Recipe(mainInformation: MainInformation(name: "Chocolate Billionaires",
                                                 description: "Chocolate and caramel candies that are to die for!",
                                                 author: "Jack B",
                                                 category: .dessert),
                ingredients: [
-                    Ingredient(name: "1 package of carammels", quantity: 14, unit: .oz),
+                    Ingredient(name: "1 package of caramels", quantity: 14, unit: .oz),
                     Ingredient(name: "Water", quantity: 3, unit: .tbs),
                     Ingredient(name: "Chopped Pecans", quantity: 1.25, unit: .cups),
                     Ingredient(name: "Rice Krispies", quantity: 1, unit: .cups),
@@ -303,12 +303,12 @@ extension Recipe {
                directions:  [
                     Direction(description: "Heat oven to 375. Lightly coat 13 x 9 baking dish with vegetable cooking spray", isOptional: false),
                     Direction(description: "Start to cook pasta", isOptional: false),
-                    Direction(description: "Meanwhile, melt 1 tablespoon butter in a saucepan over medium heat. Add onion, and cook until softended, about 3 min.", isOptional: false),
+                    Direction(description: "Meanwhile, melt 1 tablespoon butter in a saucepan over medium heat. Add onion, and cook until softened, about 3 min.", isOptional: false),
                     Direction(description: "Whisk together 1/2 cup milk and flour until smooth", isOptional: false),
                     Direction(description: "Add milk texture to onion, then whisk in remaining 3.5 cups milk, bay leaves, thyme, salt, and pepper.", isOptional: false),
                     Direction(description: "Cook over medium-low heat 10-12min, stirring occasionally, until slight thickened", isOptional: false),
                     Direction(description: "With slotted spoon, remove bay leaves. Stir in cheese until melted", isOptional: false),
-                    Direction(description: "Drain pasta and stire into cheese mixture", isOptional: false),
+                    Direction(description: "Drain pasta and stir into cheese mixture", isOptional: false),
                     Direction(description: "Drain pasta and stir into cheese mixture. Pour into prepared dish and bake for 35 minutes, or until cheese is bubbly", isOptional: false),
                     Direction(description: "Eat!", isOptional: true)
                 ]
@@ -322,7 +322,7 @@ extension Recipe {
                     Ingredient(name: "Cloves Garlic, minced", quantity: 4, unit: .none),
                     Ingredient(name: "Stock Celery, diced", quantity: 1, unit: .none),
                     Ingredient(name: "Carrots, shredded", quantity: 1, unit: .cups),
-                    Ingredient(name: "Brocolli florets", quantity: 1, unit: .cups),
+                    Ingredient(name: "Broccolli florets", quantity: 1, unit: .cups),
                     Ingredient(name: "Zucchini, cubed", quantity: 1, unit: .none),
                     Ingredient(name: "Spinach", quantity: 3, unit: .cups),
                     Ingredient(name: "Potato skinned and cubed", quantity: 1, unit: .none),
@@ -334,7 +334,7 @@ extension Recipe {
                     Direction(description: "Cook onion and garlic on high heat until onion is translucent, about 5 min", isOptional: false),
                     Direction(description: "Add celery, carrots, parsley, and cook for 5-7min", isOptional: false),
                     Direction(description: "Add can diced tomatoes, vegetable stock, and potato. Bring to boil and let simmer for 45min", isOptional: false),
-                    Direction(description: "Add brocolli, zucchini, and kidney beans. Bring back to boil and then let simmer for 15 more min", isOptional: false),
+                    Direction(description: "Add broccolli, zucchini, and kidney beans. Bring back to boil and then let simmer for 15 more min", isOptional: false),
                     Direction(description: "Serve with spinach and parmesan cheese", isOptional: true)
                 ]
         ),
@@ -364,7 +364,7 @@ extension Recipe {
                                                 author: "Ben",
                                                 category: .breakfast),
                ingredients: [
-                    Ingredient(name: "Granloa", quantity: 0.5, unit: .cups),
+                    Ingredient(name: "Granola", quantity: 0.5, unit: .cups),
                     Ingredient(name: "Banana", quantity: 1, unit: .none),
                     Ingredient(name: "Peanut Butter", quantity: 2, unit: .tbs),
                 ],

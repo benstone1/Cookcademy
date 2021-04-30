@@ -18,6 +18,10 @@ struct Recipe: Identifiable {
     var isValid: Bool {
         mainInformation.isValid && !ingredients.isEmpty && !directions.isEmpty
     }
+    
+    func index(of direction: Direction, excludingOptionalDirections: Bool) -> Int? {
+        directions.filter { excludingOptionalDirections ? !$0.isOptional : true }.firstIndex { $0.description == direction.description }
+    }
 }
 
 struct MainInformation {

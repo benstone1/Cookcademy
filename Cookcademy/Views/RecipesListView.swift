@@ -39,8 +39,6 @@ extension RecipesListView {
 
 struct RecipesListView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            RecipesListView()
-        }
+        RecipesListView()
     }
 }

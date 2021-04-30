@@ -344,7 +344,7 @@ extension Recipe {
                         ingredients: [
                             Ingredient(name: "Diced Yellow Onion", quantity: 1, unit: .none),
                             Ingredient(name: "Minced Garlic Clove", quantity: 4, unit: .none),
-                            Ingredient(name: "Diced Stalk of Celery", quantity: 1, unit: .none),
+                            Ingredient(name: "Diced Celery Stalk", quantity: 1, unit: .none),
                             Ingredient(name: "Shredded Carrots", quantity: 1, unit: .cups),
                             Ingredient(name: "Broccolli florets", quantity: 1, unit: .cups),
                             Ingredient(name: "Cubed Zucchini", quantity: 1, unit: .none),

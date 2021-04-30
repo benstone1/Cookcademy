@@ -127,10 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				F2804118262E204100724108 /* ModifyRecipeView.swift */,
+				F280412A262E311C00724108 /* ModifyMainInformationView.swift */,
 				F280412E262E357000724108 /* ModifyComponentsView.swift */,
 				F208ABE3262E4533003E59A8 /* ModifyDirectionView.swift */,
 				F2804134262E3AD200724108 /* ModifyIngredientView.swift */,
-				F280412A262E311C00724108 /* ModifyMainInformationView.swift */,
 			);
 			path = ModifyRecipes;
 			sourceTree = "<group>";

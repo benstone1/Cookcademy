@@ -46,7 +46,7 @@ struct RecipeDetailView: View {
                             EmptyView()
                         } else {
                             HStack {
-                                let index = recipe.indexExcludingOptionalDirections(of: direction) ?? 0
+                                let index = recipe.index(of: direction, excludingOptionalDirections: hideOptionalSteps) ?? 0
                                 Text("\(index + 1). ").bold()
                                 Text("\(direction.isOptional ? "(Optional) " : "")\(direction.description)")
                             }.foregroundColor(listTextColor)

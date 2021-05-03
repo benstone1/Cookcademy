@@ -8,7 +8,11 @@
 import Foundation
 
 struct Recipe: Identifiable {
-    var id = UUID()
+    var id: UUID {
+        get {
+            UUID()
+        }
+    }
     
     var mainInformation: MainInformation
     var ingredients: [Ingredient]

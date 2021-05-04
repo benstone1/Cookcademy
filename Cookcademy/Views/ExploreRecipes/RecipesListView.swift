@@ -14,7 +14,7 @@ struct RecipesListView: View {
     @EnvironmentObject private var recipeData: RecipeData
     
     @State private var isPresenting = false
-    @State private var newRecipe = Recipe.emptyRecipe
+    @State private var newRecipe = Recipe.newEmptyRecipe()
 
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
@@ -51,6 +51,7 @@ struct RecipesListView: View {
                                 Button("Add") {
                                     recipeData.add(recipe: newRecipe)
                                     isPresenting = false
+                                    newRecipe = Recipe.newEmptyRecipe()
                                 }
                             }
                         }

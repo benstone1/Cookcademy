@@ -14,7 +14,7 @@ struct ModifyRecipeView: View {
         VStack {
             Button("Fill in the recipe with test data.") {
                 // TODO: Add implementation for creating a recipe
-                recipe.mainInformation = MainInformation(name: "test", description: "test", author: "test", category: .breakfast)
+                recipe.mainInformation = MainInformation(name: "test \(Int.random(in: 0..<1_000))", description: "test", author: "test", category: .breakfast)
                 recipe.directions = [Direction(description: "test", isOptional: false)]
                 recipe.ingredients = [Ingredient(name: "test", quantity: 1.0, unit: .none)]
             }

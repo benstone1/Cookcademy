@@ -44,9 +44,8 @@ struct CategoryView: View {
     }
 }
 
-struct RecipeCateogryGrid_Previews: PreviewProvider {
+struct RecipeCateogryGridView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCateogryGridView().preferredColorScheme(.dark)
-        RecipeCateogryGridView().preferredColorScheme(.light)
+        RecipeCateogryGridView()
     }
 }

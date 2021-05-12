@@ -50,6 +50,8 @@ struct RecipesListView: View {
                             if newRecipe.isValid {
                                 Button("Add") {
                                     recipeData.add(recipe: newRecipe)
+                                    newRecipe = Recipe.emptyRecipe
+                                    newRecipe.mainInformation.category = recipes[0].mainInformation.category
                                     isPresenting = false
                                 }
                             }

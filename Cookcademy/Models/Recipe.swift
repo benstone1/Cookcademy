@@ -100,12 +100,14 @@ struct Ingredient: RecipeComponent {
 
 
 extension Recipe {
-    static let emptyRecipe = Recipe(mainInformation: MainInformation(name: "",
+    static let emptyRecipe: Recipe { Recipe(mainInformation: MainInformation(name: "",
                                                                      description: "",
                                                                      author: "",
                                                                      category: .breakfast),
                                     ingredients: [],
                                     directions: [])
+                                   }
+    
     static let testRecipes: [Recipe] = [
         Recipe(mainInformation: MainInformation(name: "Dad's Mashed Potatoes",
                                                          description: "Buttery salty mashed potatoes!",

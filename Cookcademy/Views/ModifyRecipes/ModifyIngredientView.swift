@@ -30,7 +30,7 @@ struct ModifyIngredientView: View {
             Stepper(value: $ingredient.quantity, in: 0...100, step: 0.5) {
                 HStack {
                     Text("Quantity:")
-                    TextField("Quantity", value: $ingredient.quantity, formatter: NumberFormatter.decimal)
+                    TextField("Quantity", value: $ingredient.quantity, formatter: formatter)
                         .keyboardType(.numbersAndPunctuation)
                 }
             }.listRowBackground(listBackgroundColor)

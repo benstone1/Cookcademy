@@ -16,6 +16,12 @@ struct ModifyIngredientView: View {
 
     @EnvironmentObject private var recipeData: RecipeData
     @Environment(\.presentationMode) private var mode
+    
+    lazy var formatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        return formatter
+    }()
 
     var body: some View {
         Form {
@@ -49,14 +55,6 @@ struct ModifyIngredientView: View {
             }.listRowBackground(listBackgroundColor)
         }
         .foregroundColor(listTextColor)
-    }
-}
-
-extension NumberFormatter {
-    static var decimal: NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter
     }
 }
 

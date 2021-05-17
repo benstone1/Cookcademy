@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipeCateogryGridView: View {
+struct RecipeCategoryGridView: View {
     @StateObject private var recipeData = RecipeData()
 
     var body: some View {
@@ -38,7 +38,7 @@ struct CategoryView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .opacity(0.35)
-            Text(category.rawValue.capitalized)
+            Text(category.rawValue)
                 .font(.title)
         }
     }

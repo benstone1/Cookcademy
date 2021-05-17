@@ -47,16 +47,6 @@ struct Ingredient {
     var quantity: Double
     var unit: Unit
     
-    init(name: String, quantity: Double, unit: Unit) {
-        self.name = name
-        self.quantity = quantity
-        self.unit = unit
-    }
-    
-    init() {
-        self.init(name: "", quantity: 1.0, unit: .none)
-    }
-    
     var description: String {
         let formattedQuanity = String(format: "%g", quantity)
         switch unit {
@@ -81,6 +71,10 @@ struct Ingredient {
         case none = "No units"
         
         var singularName: String { String(rawValue.dropLast()) }
+    }
+    
+    static var emptyIngredient: Ingredient {
+        Ingredient(name: "", quantity: 1.0, unit: .none)   
     }
 }
 

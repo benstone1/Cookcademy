@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModifyIngredientView: View {
     @Binding var ingredient: Ingredient
-    let createAction: ((Ingredient) -> Void)
+    let createAction: ((Bool) -> Void)
     
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
@@ -42,7 +42,7 @@ struct ModifyIngredientView: View {
             HStack {
                 Spacer()
                 Button("Save") {
-                    createAction(ingredient)
+                    createAction(true)
                     mode.wrappedValue.dismiss()
                 }
                 Spacer()
@@ -64,8 +64,8 @@ struct ModifyIngredientView_Previews: PreviewProvider {
     @State static var recipe = Recipe.testRecipes[0]
     static var previews: some View {
         NavigationView {
-           ModifyIngredientView(ingredient: $recipe.ingredients[0]) { ingredient in
-                print(ingredient)
+           ModifyIngredientView(ingredient: $recipe.ingredients[0]) { didAddRecipe in
+                print(didAddRecipe)
             }.navigationTitle("Add Ingredient")
         }
     }

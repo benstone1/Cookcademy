@@ -76,7 +76,7 @@ struct Ingredient {
 
 
 extension Recipe {
-    static let emptyRecipe: Recipe { Recipe(mainInformation: MainInformation(name: "",
+    static var  emptyRecipe: Recipe { Recipe(mainInformation: MainInformation(name: "",
                                                                      description: "",
                                                                      author: "",
                                                                      category: .breakfast),

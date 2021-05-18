@@ -11,6 +11,18 @@ struct Recipe {
     var mainInformation: MainInformation
     var ingredients: [Ingredient]
     var directions: [Direction]
+    
+    init() {
+        self.init(mainInformation: MainInformation(name: "", description: "", author: "", category: .breakfast),
+                  ingredients: [],
+                  directions: [])
+    }
+    
+    init(mainInformation: MainInformation, ingredients:[Ingredient], directions:[Direction]) {
+        self.mainInformation = mainInformation
+        self.ingredients = ingredients
+        self.directions = directions
+    }
 }
 
 struct MainInformation {
@@ -65,14 +77,6 @@ struct Ingredient {
 }
 
 extension Recipe {
-    static var emptyRecipe: Recipe { Recipe(mainInformation: MainInformation(name: "",
-                                                                     description: "",
-                                                                     author: "",
-                                                                     category: .breakfast),
-                                    ingredients: [],
-                                    directions: [])
-                                   }
-    
     static let testRecipes: [Recipe] = [
         Recipe(mainInformation: MainInformation(name: "Dad's Mashed Potatoes",
                                                          description: "Buttery salty mashed potatoes!",

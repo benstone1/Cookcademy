@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ModifyRecipeIngredientsView: View {
+struct ModifyIngredientsView: View {
     @Binding var ingredients: [Ingredient]
     
     private let listBackgroundColor = AppColor.background

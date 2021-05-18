@@ -14,7 +14,6 @@ struct ModifyIngredientView: View {
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
 
-    @EnvironmentObject private var recipeData: RecipeData
     @Environment(\.presentationMode) private var mode
 
     var body: some View {

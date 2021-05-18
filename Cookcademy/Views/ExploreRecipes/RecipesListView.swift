@@ -14,7 +14,7 @@ struct RecipesListView: View {
     @EnvironmentObject private var recipeData: RecipeData
     
     @State private var isPresenting = false
-    @State private var newRecipe = Recipe.emptyRecipe
+    @State private var newRecipe = Recipe()
 
     private let listBackgroundColor = AppColor.background
     private let listTextColor = AppColor.foreground
@@ -31,7 +31,7 @@ struct RecipesListView: View {
         .toolbar(content: {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
-                    newRecipe = Recipe.emptyRecipe
+                    newRecipe = Recipe()
                     newRecipe.mainInformation.category = recipes[0].mainInformation.category
                     isPresenting = true
                 }, label: {

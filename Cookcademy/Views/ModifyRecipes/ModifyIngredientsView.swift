@@ -53,10 +53,10 @@ struct ModifyIngredientsView_Previews: PreviewProvider {
     @State static var emptyIngredients = [Ingredient]()
     static var previews: some View {
         NavigationView {
-            ModifyRecipeIngredientsView(ingredients: $recipe.ingredients)
+            ModifyIngredientsView(ingredients: $recipe.ingredients)
         }
         NavigationView {
-            ModifyRecipeIngredientsView(ingredients: $emptyIngredients)
+            ModifyIngredientsView(ingredients: $emptyIngredients)
         }
     }
 }

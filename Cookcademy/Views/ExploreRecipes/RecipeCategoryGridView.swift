@@ -38,7 +38,7 @@ struct CategoryView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .opacity(0.35)
-            Text(category.rawValue.capitalized)
+            Text(category.rawValue)
                 .font(.title)
         }
     }

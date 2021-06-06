@@ -32,7 +32,7 @@ struct RecipesListView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button(action: {
                     newRecipe = Recipe()
-                    newRecipe.mainInformation.category = recipes.count > 0 ? recipes[0].mainInformation.category : .breakfast
+                    newRecipe.mainInformation.category = recipes.first?.mainInformation.category ?? .breakfast
                     isPresenting = true
                 }, label: {
                     Image(systemName: "plus")

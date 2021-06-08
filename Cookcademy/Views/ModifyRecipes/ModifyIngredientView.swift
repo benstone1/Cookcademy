@@ -20,7 +20,6 @@ struct ModifyIngredientView: ModifyComponentView {
     private let listTextColor = AppColor.foreground
     
     @Environment(\.presentationMode) private var mode
-    @EnvironmentObject private var recipeData: RecipeData
 
     var body: some View {
         Form {

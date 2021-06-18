@@ -20,7 +20,7 @@ class RecipeData: ObservableObject {
         return filteredRecipes
     }
     
-    var favoritedRecipes: [Recipe] {
+    var favoriteRecipes: [Recipe] {
         recipes.filter { $0.isFavorite }
     }
     

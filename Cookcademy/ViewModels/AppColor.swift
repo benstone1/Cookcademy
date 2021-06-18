@@ -13,9 +13,9 @@ struct AppColor {
 }
 
 extension Color: RawRepresentable {
-    public init?(rawValue str: String) {
+    public init?(rawValue: String) {
         do {
-            let encodedData = str.data(using: .utf8)!
+            let encodedData = rawValue.data(using: .utf8)!
             let components = try JSONDecoder().decode([Double].self, from: encodedData)
             self = Color(red: components[0], green: components[1], blue: components[2], opacity: components[3])
         }

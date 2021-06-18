@@ -74,7 +74,7 @@ extension RecipesListView {
         case let .singleCategory(category):
             return recipeData.recipes(for: category)
         case .favorites:
-            return recipeData.favoritedRecipes
+            return recipeData.favoriteRecipes
         }
     }
     
@@ -95,7 +95,7 @@ extension RecipesListView {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RecipesListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             RecipesListView(viewStyle: .singleCategory(.breakfast))

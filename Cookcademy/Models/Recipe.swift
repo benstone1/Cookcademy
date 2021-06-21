@@ -32,7 +32,9 @@ struct Recipe: Identifiable {
     }
     
     func index(of direction: Direction, excludingOptionalDirections: Bool) -> Int? {
-        directions.filter { excludingOptionalDirections ? !$0.isOptional : true }.firstIndex { $0.description == direction.description }
+            let directions = directions.filter { excludingOptionalDirections ? !$0.isOptional : true }
+            let index = directions.firstIndex { $0.description == direction.description }
+            return index
     }
 }
 

@@ -18,7 +18,7 @@ extension RecipeComponent {
         String(describing: self).lowercased()
     }
     static func pluralName() -> String {
-        String(describing: self).lowercased() + "s"
+        singularName() + "s"
     }
 }
 

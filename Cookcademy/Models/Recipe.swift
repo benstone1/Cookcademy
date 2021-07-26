@@ -42,6 +42,7 @@ struct MainInformation {
         case dinner = "Dinner"
         case dessert = "Dessert"
     }
+
     var isValid: Bool {
         !name.isEmpty && !description.isEmpty && !author.isEmpty
     }

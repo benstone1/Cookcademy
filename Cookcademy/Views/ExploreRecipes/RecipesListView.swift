@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct RecipesListView: View {
-    
-    let category: MainInformation.Category
-    
     @EnvironmentObject private var recipeData: RecipeData
-    
+    let category: MainInformation.Category
+
     @State private var isPresenting = false
     @State private var newRecipe = Recipe()
 

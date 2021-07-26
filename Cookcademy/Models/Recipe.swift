@@ -8,7 +8,8 @@
 import Foundation
 
 struct Recipe:Identifiable {
-    var id = UUID() {
+    var id = UUID()
+    
     var mainInformation: MainInformation
     var ingredients: [Ingredient]
     var directions: [Direction]
@@ -51,16 +52,16 @@ struct Ingredient {
     var unit: Unit
         
     var description: String {
-        let formattedQuanity = String(format: "%g", quantity)
+        let formattedQuantity = String(format: "%g", quantity)
         switch unit {
         case .none:
             let formattedName = quantity == 1 ? name : "\(name)s"
-            return "\(formattedQuanity) \(formattedName)"
+            return "\(formattedQuantity) \(formattedName)"
         default:
             if quantity == 1 {
                 return "1 \(unit.singularName) \(name)"
             } else {
-                return "\(formattedQuanity) \(unit.rawValue) \(name) "
+                return "\(formattedQuantity) \(unit.rawValue) \(name) "
             }
         }
     }

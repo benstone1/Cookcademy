@@ -12,7 +12,7 @@ struct MainTabView: View {
 
     var body: some View {
         TabView {
-            RecipeCateogryGridView()
+            RecipeCategoryGridView()
                 .tabItem { Label("Recipes", systemImage: "list.dash") }
             NavigationView {
                 RecipesListView(viewStyle: .favorites)

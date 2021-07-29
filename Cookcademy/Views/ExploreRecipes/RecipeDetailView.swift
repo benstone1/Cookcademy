@@ -69,7 +69,7 @@ struct RecipeDetailView: View {
                             }
                         }
                     }
-                    .navigationTitle("Edit Ingredient")
+                    .navigationTitle("Edit Recipe")
             }
         }
     }

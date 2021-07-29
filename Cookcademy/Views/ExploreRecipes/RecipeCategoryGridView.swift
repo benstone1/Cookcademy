@@ -46,6 +46,6 @@ struct CategoryView: View {
 
 struct RecipeCategoryGrid_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeCateogryGridView()
+        RecipeCategoryGridView()
     }
 }

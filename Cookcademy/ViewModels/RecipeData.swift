@@ -66,7 +66,7 @@ class RecipeData: ObservableObject {
             let documentsDirectory = try FileManager.default.url(for: .documentDirectory,
                                                                  in: .userDomainMask,
                                                                  appropriateFor: nil,
-                                                                 create: false)
+                                                                 create: true)
             return documentsDirectory.appendingPathComponent("recipeData")
         }
         catch {

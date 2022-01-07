@@ -1,3 +1,3 @@
 # Cookcademy
 
-![App Gif](finalVideo.gif)
+<img src=finalVideo.gif width=400/>
